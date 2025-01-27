@@ -29,6 +29,7 @@ button {
   padding: 8px 16px;
   cursor: pointer;
   border-radius: 4px;
+  font-size: 16px;
 }
 
 button:hover {
@@ -38,4 +39,22 @@ button:hover {
 #result {
   margin-top: 10px;
   font-weight: bold;
+  font-size: 18px;
+}
+
+/* 定义一个简单的“淡入”动画 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 当元素拥有 fade-in 这个类时，播放 fadeIn 动画 */
+.fade-in {
+  animation: fadeIn 1s ease forwards; /* 持续 1s, 向前过渡, 播放完保持最终状态 */
 }
