@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>明天吃什么？</title>
+  <!-- 引入CSS文件 -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>覃楚卉，明天应该吃什么？</h1>
+  
+  <div class="food-list">
+    <h2>请勾选你想吃的食物：</h2>
+    <!-- 这里用一组checkbox来表示可选食物 -->
+    <label>
+      <input type="checkbox" class="food-checkbox" data-name="牛肉卷" data-cal="250"> 牛肉卷（250卡/份）
+    </label><br/>
+    <label>
+      <input type="checkbox" class="food-checkbox" data-name="羊肉卷" data-cal="300"> 羊肉卷（300卡/份）
+    </label><br/>
+    <label>
+      <input type="checkbox" class="food-checkbox" data-name="虾滑" data-cal="150"> 虾滑（150卡/份）
+    </label><br/>
+    <label>
+      <input type="checkbox" class="food-checkbox" data-name="豆腐皮" data-cal="100"> 豆腐皮（100卡/份）
+    </label><br/>
+    <label>
+      <input type="checkbox" class="food-checkbox" data-name="饺子" data-cal="200"> 饺子（200卡/份）
+    </label><br/>
+    <label>
+      <input type="checkbox" class="food-checkbox" data-name="李子园牛奶" data-cal="180"> 李子园牛奶（180卡/瓶）
+    </label><br/>
+    <label>
+      <input type="checkbox" class="food-checkbox" data-name="海苔" data-cal="50"> 海苔（50卡/包）
+    </label><br/>
+  </div>
+
+  <!-- 交互按钮和显示结果的区域 -->
+  <div class="actions">
+    <button id="calculate-btn">计算总热量</button>
+    <p id="result"></p>
+  </div>
+
+  <!-- 引入JS文件 -->
+  <script src="script.js"></script>
+</body>
+</html>
